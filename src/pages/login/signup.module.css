@@ -1,0 +1,92 @@
+.root {
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    margin: 0px;
+}
+
+.cineCritique_logo4 {
+    margin-top: 35px; 
+}
+
+.tablet {
+    position: absolute; 
+    left: 50%;
+    top: 325%;
+    transform: translate(-50%,-50%); /*자기 자신 기준 이동*/
+    background-color: rgba(255, 255, 255, 0.07);
+    width: 350px;
+    height: 330px;
+    border-radius: 20px;
+    font-size: 12px;
+    color:white;
+    padding: 15px 0px 45px 0px;
+}
+
+.tablet > .text { /*sign up 제목*/
+    margin-bottom: 25px;
+}
+
+.form .text { 
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 4px ;
+}
+
+input {     /*입력칸 조절*/
+    border: 0px;
+    width: 240px;
+    height: 23px;
+    border-radius: 5px;
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+.pwB {
+    letter-spacing: 3px;
+}
+.stext { /*pw alert text*/
+    font-size: 10px;
+    text-align: left;
+    margin: 2% 15% 7% 15%;
+    color:rgba(255, 255, 255, 0.653);
+}
+
+.idB:focus, .emailB:focus, .pwB:focus{
+   outline: none; 
+   /*테두리 고민..
+   2px solid rgba(224, 224, 224, 0.777);
+    */
+}
+
+.button {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.38);
+    color: white;
+    border:none;
+    position: relative;
+    border-radius: 10px;
+    width: 250px;
+    padding: 13px 60px;
+    margin: 0%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.455);
+}
+
+.notice {
+    font-size: 10px;
+    position: relative;
+    top: 10px;
+    color:rgba(255, 255, 255, 0.653);
+    margin-right: 80px;
+}
+
+.signin {
+    position: relative;
+    top: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight:100;
+    padding-right: 0px;
+}
