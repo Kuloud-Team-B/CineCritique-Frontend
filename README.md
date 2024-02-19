@@ -1,1 +1,1 @@
-# CineCritique-Frontend
+# CineCritique
