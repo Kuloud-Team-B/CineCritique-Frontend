@@ -1,0 +1,9 @@
+.rootsignin {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:auto; /*부모 태그에 넣으면 자식 태그의 길이만큼 늘어남*/
+    text-align: center;
+  }

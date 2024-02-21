@@ -1,35 +1,35 @@
 import React, { Component } from 'react';
 //import {Link, Routes, Route} from 'react-router-dom';
-//sign in ÆäÀÌÁö·Î ÀÌµ¿
+//sign in í˜ì´ì§€ë¡œ ì´ë™
 
 /*
-- react hook formÀ¸·Î À¯È¿¼º °Ë»ç ÄÚµå Ãß°¡ ¿¹Á¤
-- Àç»ç¿ëÇÒ ÄÄÆ÷³ÍÆ® ¼öÁ¤ ¿¹Á¤*/
+- react hook formìœ¼ë¡œ ìœ íš¨ì„± ê²€ì‚¬ ì½”ë“œ ì¶”ê°€ ì˜ˆì •
+- ì¬ì‚¬ìš©í•  ì»´í¬ë„ŒíŠ¸ ìˆ˜ì • ì˜ˆì •*/
 import styles from './signup.module.css';
 import logo from '../../assets/img/cineCritique_logo4.png';
+import classes from './button.module.css';
 
 class Signup extends Component{
     render() {
         return (
-        <div className='rootsignup'>
-            <div className={styles.root}>
-                <img src={logo} className={styles.cineCritique_logo4} alt='logo' width='240px'></img>
+        <div className={styles.rootsignup}>
+                <img src={logo} className={styles.logo} alt='logo'></img>
                 <div className={styles.tablet}>
-                    <div className={styles.text}><h2> SIGN UP </h2></div> 
+                    <div className={styles.text}>íšŒì›ê°€ì…</div> 
                     <form className={styles.form}>    
-                        <div className={styles.text}>ID</div>
+                        <div className={styles.text}>ì•„ì´ë””</div>
                         <input type='text' name='id'  className={styles.idB} size='25' maxLength='20'></input> 
-                        <div className={styles.text}>Email</div>
+                        <div className={styles.text}>ì´ë©”ì¼</div>
                         <input type='text' name='email' className={styles.emailB} size='25' maxLength='40'></input>                            
-                        <div className={styles.text}>Password</div>
+                        <div className={styles.text}>ë¹„ë°€ë²ˆí˜¸</div>
                         <input type='password' name='pw' className={styles.pwB} size='25' maxLength='25'></input>
-                        <div className={styles.stext}>* Passwords must be at least 8 characters.</div> 
-                        <button className={styles.button}>Sign up</button>          
+                        <div className={styles.text}>ë¹„ë°€ë²ˆí˜¸ í™•ì¸</div>
+                        <input type='password' name='pw' className={styles.pwB} size='25' maxLength='25'></input>
+                        <button className={classes.btn}>ê°€ì…í•˜ê¸°</button>          
                     </form>
-                    <span className={styles.notice}>Already have an account?</span>
-                    <button className={styles.signin}>Sign in</button> 
+                    <span className={styles.notice}>ì´ë¯¸ ê³„ì •ì´ ìˆìœ¼ì‹ ê°€ìš”?</span>
+                    <button className={styles.signin}>ë¡œê·¸ì¸</button> 
                 </div>
-            </div>  
         </div>
         );
 };
