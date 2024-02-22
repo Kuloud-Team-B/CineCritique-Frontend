@@ -21,10 +21,10 @@ function App() {
       <BrowserRouter>    
           <Routes>
               <Route path="/" element = {<Signup/>}></Route>
+              <Route path="/Signin" element = {<Signin/>}></Route>
               <Route path="/Signup" element = {<Signup/>}></Route>
               <Route path="/Genrepage" element = {<Genrepage/>}></Route>
               <Route path="/Actordetail" element = {<Actordetail/>}></Route>
-              <Route path="/Signin" element = {<Signin/>}></Route>
               <Route path="/Mainpage" element = {<Mainpage/>}></Route>              
               <Route path="/Moviedetail" element = {<Moviedetail/>}></Route>
               <Route path="/Myinfo" element = {<Myinfo/>}></Route>             

@@ -14,16 +14,17 @@
 }
 
 .tablet {
+    /* 공통 속성*/
     position: relative;
-    left: 50%;
-    top: 5%;
     transform: translate(-50%,0%); 
     background-color: rgba(255, 255, 255, 0.07);
-    width: 350px;
-    height: 370px;
-    border-radius: 20px;
-    font-size: 12px;
     padding: 25px 0px 45px 0px;
+    border-radius: 30px;
+    left: 50%;    
+ 
+    top: 3.5%;
+    width: 350px;
+    height: 395px;
     margin-bottom: 50px;
 }
 
@@ -41,7 +42,22 @@
     margin-bottom: 4px ;
 }
 
-input {    
+.pwB {
+    letter-spacing: 3px;
+}
+
+.stext { 
+    font-size: 10px;
+    text-align: left;
+    margin: 0.5% 15% 0% 15%;
+    color: rgba(206, 234, 227, 0.867);
+}
+
+.idB:focus, .emailB:focus, .pwB:focus, .pwcB:focus{
+   outline: 2px solid rgba(158, 168, 212, 0.777);
+}
+
+.idB, .emailB, .pwB, .pwcB {
     border: 0px;
     width: 240px;
     height: 23px;
@@ -49,21 +65,6 @@ input {
     padding-left: 10px;
     letter-spacing: 0.5px;
     margin-bottom: 3px;
-}
-
-.pwB {
-    letter-spacing: 3px;
-}
-/*pw alert text
-.stext { 
-    font-size: 10px;
-    text-align: left;
-    margin: 2% 15% 7% 15%;
-    color:rgba(255, 255, 255, 0.653);
-}
-*/
-.idB:focus, .emailB:focus, .pwB:focus{
-   outline: 2px solid rgba(158, 168, 212, 0.777);
 }
 
 .notice {
