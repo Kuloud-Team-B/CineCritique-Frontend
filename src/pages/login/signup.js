@@ -1,11 +1,17 @@
 import React, {  useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+//import axios from 'axios';
 import styles from './signup.module.css';
 import logo from '../../assets/img/cineCritique_logo4.png';
 import classes from '../../components/button/loginbtn.module.css';
 
-const Signup = () => {       
+/*
+- 이메일로 중복 회원가입 방지 기능 추가할지 고민 
+- axios로 스프링이랑 통신하는 기능 추가할 예정
+*/
+
+const Signup = () => {  
     const {
         register,
         watch,
@@ -76,7 +82,7 @@ const Signup = () => {
                                 })}>
                             </input>
                             {errors.pw && errors.pw.type === 'required' && (
-                                <p className={styles.stext}>* 8~16자의 영문 및 숫자를 입력하세요.</p>
+                                <p className={styles.stext}>* 비밀번호를 입력하세요.</p>
                             )}
                             {errors.pw && errors.pw.type === 'pattern' && (
                                 <p className={styles.stext}>* 최소 1개 이상의 숫자와 영문 8~16자를 입력하세요.</p> 

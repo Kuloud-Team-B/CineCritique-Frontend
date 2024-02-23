@@ -1,9 +1,106 @@
 .rootsignin {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../../assets/img/bg1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow:auto; /*부모 태그에 넣으면 자식 태그의 길이만큼 늘어남*/
-    text-align: center;
-  }
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:auto; /*부모 태그에 넣으면 자식 태그의 길이만큼 늘어남*/
+  text-align: center;
+}
+
+.logo {
+  margin-top: 13px; 
+  width: 250px;
+}
+
+.tablet {
+  /* 공통 속성*/
+  position: relative;
+  transform: translate(-50%,0%); 
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 25px 0px 45px 0px;
+  border-radius: 30px;
+  left: 50%;    
+  top: 1.5%;
+
+  width: 700px;
+  height: 360px;
+  margin-bottom: 50px;
+}
+
+.line {
+  background-color:rgba(255, 255, 255, 0.22);
+  width: 4px;
+  height: 330px;
+}
+
+.title { 
+  margin-bottom: 17px;
+  font-size: large;
+  letter-spacing: 1.5px;
+  font-family: 'Pretendard-Bold';
+}
+
+.or {
+  font-size: medium;
+  letter-spacing: 0.5px;
+  font-family: 'Pretendard-SemiBold';
+}
+
+.form .text { 
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 10px;
+  margin-bottom: 4px ;
+}
+
+.pwB {
+  letter-spacing: 3px;
+}
+
+.stext { 
+  font-size: 10px;
+  text-align: left;
+  margin: 0.5% 15% 0% 15%;
+  color: rgba(206, 234, 227, 0.867);
+}
+
+.idB:focus, .emailB:focus, .pwB:focus, .pwcB:focus{
+ outline: 2px solid rgba(158, 168, 212, 0.777);
+}
+
+.idB, .emailB, .pwB, .pwcB {
+  border: 0px;
+  width: 240px;
+  height: 28px;
+  border-radius: 5px;
+  padding-left: 10px;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.notice {
+  font-size: 10px;
+  position: relative;
+  top: 7px;
+  color:rgba(255, 255, 255, 0.653);
+  margin-right: 30%;
+}
+
+.sns {
+  font-size: 14.5px;
+  background-color: rgba(0, 0, 0, 0.38);
+  color: white;
+  border:none;
+  border-radius: 10px;
+  width: 255px;
+  padding: 13px 20px;
+  margin: 8% auto 0% auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.455);
+  font-family: 'Pretendard-Semibold';
+  letter-spacing: 1px;
+}
+
+.klogo {
+  width: 255px;
+}
