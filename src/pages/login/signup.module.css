@@ -6,10 +6,13 @@
     background-size: cover;
     overflow:auto; /*내용에 따라 배경 길이 자동 수정*/
     text-align: center;
+    display: flex;
+    flex-direction: column;
+        
   }
 
 .logo {
-    margin-top: 13px; 
+    margin: 20px auto 15px auto ; 
     width: 250px;
 }
 
@@ -21,11 +24,10 @@
     padding: 22px 0px 45px 0px;
     border-radius: 30px;
     left: 50%;    
-    top: 1.5%;
     
     width: 350px;
-    height: 390px;
-
+    height: 400px;
+    margin-bottom: 40px;
 }
 
 .tablet > .text { 
@@ -72,7 +74,7 @@
     position: relative;
     top: 7px;
     color:rgba(255, 255, 255, 0.653);
-    margin-right: 30%;
+    margin: 0px 30% auto 2%;
 }
 
 .signin {
@@ -81,7 +83,8 @@
     background-color: transparent;
     color: white;
     border: none;
-    padding-right: 0px;
     font-family: 'Pretendard-Semibold';
     letter-spacing: 1px;
+    margin-bottom: 7px;
 }
+

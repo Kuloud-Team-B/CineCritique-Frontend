@@ -13,7 +13,7 @@ import Reviewboard from './pages/review/reviewboard';
 import Genrepage from './pages/genrepage/genrepage';
 import Actordetail from './pages/actordetail/actordetail';
 import Notice from './pages/cs/notice';
-
+import Mainlayout from './layout/mainlayout';
 
 function App() {
   return (
@@ -23,6 +23,8 @@ function App() {
               <Route path="/" element = {<Signin/>}></Route>
               <Route path="/Signin" element = {<Signin/>}></Route>
               <Route path="/Signup" element = {<Signup/>}></Route>
+
+            <Route element ={<Mainlayout></Mainlayout>}>     
               <Route path="/Genrepage" element = {<Genrepage/>}></Route>
               <Route path="/Actordetail" element = {<Actordetail/>}></Route>
               <Route path="/Mainpage" element = {<Mainpage/>}></Route>              
@@ -30,9 +32,11 @@ function App() {
               <Route path="/Myinfo" element = {<Myinfo/>}></Route>             
               <Route path="/Mylikes" element = {<Mylikes/>}></Route>
               <Route path="/Myposts" element = {<Myposts/>}></Route>
-              <Route path="/Posting" element = {<Posting/>}></Route>          
+              <Route path="/Posting" element = {<Posting/>}></Route>                          
               <Route path="/Reviewboard" element = {<Reviewboard/>}></Route>
               <Route path="/Moviedetail" element = {<Notice/>}></Route>
+            </Route>
+
           </Routes>     
       </BrowserRouter>
     </div>

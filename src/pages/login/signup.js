@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import styles from './signup.module.css';
 import logo from '../../assets/img/cineCritique_logo4.png';
 import classes from '../../components/button/loginbtn.module.css';
+import Footer from '../../layout/footer';
 
 /*
 - 이메일로 중복 회원가입 방지 기능 추가할지 고민 
@@ -110,6 +111,9 @@ const Signup = () => {
                     <span className={styles.notice}>이미 계정이 있으신가요?</span>
                     <button className={styles.signin} onClick={gotoSignin}>로그인</button> 
                 </div>
+            <div>
+                <Footer></Footer>
+            </div>
         </div>
     );
 }
